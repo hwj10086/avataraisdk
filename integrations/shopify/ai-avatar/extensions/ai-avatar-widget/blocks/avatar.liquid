@@ -1,0 +1,121 @@
+{%- comment -%}
+  AI Avatar — Theme App Embed Block
+
+  商家在 Shopify 主题编辑器里启用此块后, 数字人气泡会出现在店铺前端每个页面。
+  所有配置 (API Key / 形象 / 主题色 / 位置等) 在主题编辑器里改, 不用碰代码。
+
+  约定:
+  - target: "body" 让这块成为 App Embed Block (全站生效, 而非按 section 放置)
+  - locale 自动跟随 Shopify 店铺当前语言, 客户在多语言店铺看到对应语言界面
+  - 没填 API Key 时静默不渲染, 不在前端报错
+{%- endcomment -%}
+
+{%- if block.settings.api_key != blank -%}
+  <script src="https://embed.avataraisdk.com/widget.iife.js" async></script>
+  <ai-avatar
+    token="{{ block.settings.api_key | escape }}"
+    {%- if block.settings.agent_id != blank %}
+    agent-id="{{ block.settings.agent_id | escape }}"
+    {%- endif %}
+    position="{{ block.settings.position }}"
+    theme="{{ block.settings.theme }}"
+    primary-color="{{ block.settings.primary_color }}"
+    size="{{ block.settings.size }}"
+    locale="{{ request.locale.iso_code | replace: '_', '-' }}"
+    {%- if block.settings.greeting != blank %}
+    greeting="{{ block.settings.greeting | escape }}"
+    {%- endif %}
+    {%- if block.settings.auto_open %}
+    auto-open
+    {%- endif %}
+  ></ai-avatar>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "AI Avatar",
+  "target": "body",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Embed a 3D AI digital human on your storefront. Get your API Key at https://avataraisdk.com"
+    },
+    {
+      "type": "header",
+      "content": "Required"
+    },
+    {
+      "type": "text",
+      "id": "api_key",
+      "label": "API Key",
+      "info": "Generated in the AI Avatar console (https://avataraisdk.com)"
+    },
+    {
+      "type": "text",
+      "id": "agent_id",
+      "label": "Agent ID",
+      "info": "Optional — leave blank to auto-detect from API Key"
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Position",
+      "default": "bottom-right",
+      "options": [
+        { "value": "bottom-right", "label": "Bottom right" },
+        { "value": "bottom-left",  "label": "Bottom left" },
+        { "value": "top-right",    "label": "Top right" },
+        { "value": "top-left",     "label": "Top left" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "theme",
+      "label": "Theme",
+      "default": "light",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "dark",  "label": "Dark" },
+        { "value": "auto",  "label": "Auto (match system)" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary color",
+      "default": "#6366F1"
+    },
+    {
+      "type": "select",
+      "id": "size",
+      "label": "Chat panel size",
+      "default": "normal",
+      "options": [
+        { "value": "compact", "label": "Compact" },
+        { "value": "normal",  "label": "Normal" },
+        { "value": "large",   "label": "Large" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Behavior"
+    },
+    {
+      "type": "text",
+      "id": "greeting",
+      "label": "Greeting message",
+      "info": "Optional welcome message shown when the chat opens"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_open",
+      "label": "Auto-open on page load",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

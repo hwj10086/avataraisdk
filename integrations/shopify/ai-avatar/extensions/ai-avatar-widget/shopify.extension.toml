@@ -1,0 +1,9 @@
+# Theme App Extension config
+# Docs: https://shopify.dev/docs/apps/build/online-store/theme-app-extensions
+
+api_version = "2024-10"
+
+[[extensions]]
+name = "AI Avatar Widget"
+handle = "ai-avatar-widget"
+type = "theme"

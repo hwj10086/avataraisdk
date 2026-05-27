@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>avataraisdk · plain HTML demo</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        max-width: 720px;
+        margin: 48px auto;
+        padding: 0 24px;
+        color: #1a1a1a;
+      }
+      h1 { font-size: 28px; }
+      button {
+        font: inherit;
+        padding: 10px 16px;
+        background: #7C3AED;
+        color: white;
+        border: 0;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover { background: #6D28D9; }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>avataraisdk — plain HTML demo</h1>
+    <p>
+      Replace <code>YOUR_AGENT_ID</code> and <code>YOUR_API_KEY</code> in this file,
+      open it in a browser, and click the button below.
+    </p>
+    <p>
+      <button onclick="window.__avatar.speak('Hello! This avatar is talking with real-time lip sync.')">
+        Make the avatar speak
+      </button>
+    </p>
+
+    <script src="https://embed.avataraisdk.com/sdk.js"></script>
+    <script>
+      window.__avatar = AIAvatar.init({
+        agentId: 'YOUR_AGENT_ID',
+        token: 'YOUR_API_KEY',
+      });
+    </script>
+  </body>
+</html>

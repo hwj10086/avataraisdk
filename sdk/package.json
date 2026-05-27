@@ -1,0 +1,18 @@
+{
+  "name": "@ai-avatar/embed-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --mode iife-sdk && vite build --mode iife-widget",
+    "build:es": "vite build",
+    "build:iife-sdk": "vite build --mode iife-sdk",
+    "build:iife-widget": "vite build --mode iife-widget",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^5.4.0"
+  }
+}

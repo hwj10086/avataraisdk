@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="avataraisdk logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="60" y1="28" x2="60" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="120" height="120" rx="26" fill="url(#bg)"/>
+
+  <circle cx="50" cy="48" r="16" fill="url(#figure)"/>
+  <path d="M22 102 C22 80, 78 80, 78 102 L78 110 L22 110 Z" fill="url(#figure)"/>
+
+  <g transform="translate(72 22)">
+    <path d="M2 12 C2 5, 7 2, 14 2 L30 2 C37 2, 42 5, 42 12 L42 22 C42 28, 37 32, 30 32 L18 32 L10 40 L12 32 C5 32, 2 28, 2 22 Z"
+          fill="#FFFFFF"/>
+    <circle cx="14" cy="17" r="2.6" fill="#7C3AED"/>
+    <circle cx="22" cy="17" r="2.6" fill="#7C3AED"/>
+    <circle cx="30" cy="17" r="2.6" fill="#7C3AED"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "name": "ai-avatar-shopify",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Avatar Shopify app — Theme App Extension that embeds a 3D digital human chat widget on storefronts",
+  "scripts": {
+    "dev": "shopify app dev",
+    "deploy": "shopify app deploy",
+    "config:link": "shopify app config link",
+    "info": "shopify app info",
+    "generate:extension": "shopify app generate extension"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@shopify/cli": "~3.94.3"
+  }
+}

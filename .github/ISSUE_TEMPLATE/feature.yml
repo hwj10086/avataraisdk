@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a new feature for the SDK or a platform integration
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea? Great. The clearer the use case, the easier it is for us to prioritize.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation you're in, not the solution you've already designed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like to see?
+      description: API shape, config option, integration target, etc. Code snippets welcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: What workarounds exist today? Why aren't they good enough?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area would this affect?
+      options:
+        - Core SDK
+        - npm package
+        - WordPress plugin
+        - Shopify extension
+        - New platform integration
+        - Documentation
+        - Hosted service
+    validations:
+      required: true

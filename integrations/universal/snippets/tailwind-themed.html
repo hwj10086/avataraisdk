@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Avatar + Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <!--
+    Tailwind is fully compatible with AI Avatar — the avatar renders inside an
+    iframe, fully isolated from your Tailwind styles, so there's no cross-pollination.
+    You only need to set the `primary-color` attribute to match the avatar bubble
+    color to your site's palette.
+  -->
+
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold text-slate-900">Acme Inc.</h1>
+      <nav class="flex gap-6 text-sm text-slate-600">
+        <a href="#" class="hover:text-slate-900">Products</a>
+        <a href="#" class="hover:text-slate-900">Docs</a>
+        <a href="#" class="hover:text-slate-900">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-slate-900 mb-4">
+      Tailwind site with AI Avatar
+    </h2>
+    <p class="text-lg text-slate-600 max-w-2xl mb-12">
+      The avatar bubble in the bottom-right matches our Tailwind primary color
+      (<code class="bg-slate-100 px-1 rounded">indigo-500</code> = <code class="bg-slate-100 px-1 rounded">#6366F1</code>).
+      No CSS conflicts because the avatar lives in an iframe.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+        <h3 class="font-semibold text-slate-900 mb-2">Voice chat</h3>
+        <p class="text-sm text-slate-600">Click the mic, talk naturally.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+        <h3 class="font-semibold text-slate-900 mb-2">3D avatar</h3>
+        <p class="text-sm text-slate-600">Real-time lip sync.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+        <h3 class="font-semibold text-slate-900 mb-2">No code</h3>
+        <p class="text-sm text-slate-600">Two lines of HTML.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- =================================================
+       AI Avatar - tailwind primary color (indigo-500)
+       ================================================= -->
+  <script src="https://embed.avataraisdk.com/widget.iife.js" async></script>
+  <ai-avatar
+    token="YOUR_API_KEY"
+    agent-id="YOUR_AGENT_ID"
+    position="bottom-right"
+    theme="light"
+    primary-color="#6366F1"
+    greeting="Hi! I'm Acme's assistant. Ask me anything."
+  ></ai-avatar>
+</body>
+</html>

@@ -1,0 +1,69 @@
+name: Bug report
+description: Report a problem with the SDK, npm package, or a platform integration
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. For security issues, please do **not** open a public issue — see [SECURITY.md](../../SECURITY.md).
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area is affected?
+      options:
+        - Core SDK (sdk/)
+        - npm package (@ai-avatar/embed-sdk)
+        - WordPress plugin
+        - Shopify extension
+        - Universal embed guide (Webflow / Squarespace / Ghost / Wix / plain HTML)
+        - Examples
+        - Documentation
+        - Hosted service (avataraisdk.com)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: SDK version, plugin version, or git commit SHA
+      placeholder: "@ai-avatar/embed-sdk 0.1.2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what did you see instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: A code snippet, a repo link, or step-by-step instructions. The shorter the better.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser + version, OS, framework (React / Vue / WordPress / Shopify / plain HTML), Node version if relevant.
+      placeholder: |
+        - Browser: Chrome 130 / macOS 14.5
+        - Framework: Next.js 16
+        - Node: 22.4
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console / network errors
+      description: Paste any red errors from the browser console or relevant failed requests.
+      render: shell

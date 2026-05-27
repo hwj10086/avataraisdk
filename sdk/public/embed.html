@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Avatar Embed</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; }
+  </style>
+</head>
+<body>
+<!--
+  零 JS 配置嵌入入口
+  用法: <iframe src="embed.html?agentId=xxx&apiKey=sk-xxx&baseUrl=https://..."></iframe>
+  所有参数通过 URL query 传入，自动创建 AI Avatar 实例。
+-->
+<script type="module">
+  import { AIAvatar } from './sdk.js';
+
+  const params = new URLSearchParams(location.search);
+  const apiKey = params.get('apiKey') || params.get('token') || '';
+
+  // 父页 origin 推导(用于后端域名白名单):
+  //   1) 宿主显式传 parentOrigin query
+  //   2) 从 document.referrer 提取 origin
+  //   3) 都没有时留空,后端自行回退到 Origin / Referer
+  let parentOrigin = params.get('parentOrigin') || '';
+  if (!parentOrigin && document.referrer) {
+    try { parentOrigin = new URL(document.referrer).origin; } catch {}
+  }
+
+  if (!apiKey) {
+    document.body.innerHTML = '<p style="padding:20px;color:#ef4444;font-family:sans-serif;">Missing apiKey parameter</p>';
+  } else {
+    AIAvatar.init({
+      agentId: params.get('agentId') || undefined,
+      apiKey,
+      baseUrl: params.get('baseUrl') || undefined,
+      apiUrl: params.get('apiUrl') || undefined,
+      parentOrigin: parentOrigin || undefined,
+      appearance: {
+        theme: params.get('theme') || 'light',
+        primaryColor: params.get('primaryColor') || '#6366F1',
+        position: params.get('position') || 'bottom-right',
+        size: params.get('size') || 'normal',
+        avatarType: '3d',
+      },
+      behavior: {
+        autoOpen: params.get('autoOpen') !== 'false',
+        chatMode: params.get('chatMode') || 'embedded',
+        idleAnimation: true,
+      },
+      features: {
+        voiceInput: params.get('voiceInput') !== 'false',
+        voiceOutput: params.get('voiceOutput') !== 'false',
+      },
+    });
+  }
+</script>
+</body>
+</html>

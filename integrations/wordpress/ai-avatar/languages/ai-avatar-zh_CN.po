@@ -1,0 +1,213 @@
+# Simplified Chinese translation for AI Avatar plugin
+# Copyright (C) 2026 AI Avatar Team
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AI Avatar 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/hwj10086/avataraisdk/issues\n"
+"POT-Creation-Date: 2026-05-26 00:00+0800\n"
+"PO-Revision-Date: 2026-05-26 00:00+0800\n"
+"Last-Translator: AI Avatar Team\n"
+"Language-Team: Simplified Chinese\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ai-avatar.php
+msgid "AI Avatar Settings"
+msgstr "AI Avatar 设置"
+
+#: ai-avatar.php
+msgid "AI Avatar"
+msgstr "AI Avatar"
+
+#: ai-avatar.php
+msgid "About this plugin"
+msgstr "关于本插件"
+
+#: ai-avatar.php
+msgid "This plugin ships with a hosted demo LLM so you can try the 3D avatar in minutes. For production use with your own LLM (OpenAI, Claude, internal API), please use the JavaScript SDK in external mode."
+msgstr "本插件内置一个托管的 demo LLM,让你几分钟试用 3D 数字人。生产环境建议改用 JavaScript SDK 的 external 模式,接入你自己的 LLM(OpenAI / Claude / 自有 API)。"
+
+#: ai-avatar.php
+msgid "Learn more"
+msgstr "了解更多"
+
+#: ai-avatar.php
+msgid "Please fill in your API Key — the avatar will not appear until you do."
+msgstr "请先填写 API Key,数字人才会显示。"
+
+#: ai-avatar.php
+msgid "No key yet?"
+msgstr "没有 Key?"
+
+#: ai-avatar.php
+msgid "Get one"
+msgstr "去申请"
+
+#: ai-avatar.php
+msgid "Required"
+msgstr "必填"
+
+#: ai-avatar.php
+msgid "API Key"
+msgstr "API Key"
+
+#: ai-avatar.php
+msgid "Generate one in the AI Avatar console."
+msgstr "在 AI Avatar 控制台生成。"
+
+#: ai-avatar.php
+msgid "Agent ID"
+msgstr "Agent ID"
+
+#: ai-avatar.php
+msgid "Optional — leave blank to auto-detect from the API Key."
+msgstr "可选 — 留空时后端按 API Key 自动推断。"
+
+#: ai-avatar.php
+msgid "Appearance"
+msgstr "外观"
+
+#: ai-avatar.php
+msgid "Position"
+msgstr "位置"
+
+#: ai-avatar.php
+msgid "Bottom right"
+msgstr "右下"
+
+#: ai-avatar.php
+msgid "Bottom left"
+msgstr "左下"
+
+#: ai-avatar.php
+msgid "Top right"
+msgstr "右上"
+
+#: ai-avatar.php
+msgid "Top left"
+msgstr "左上"
+
+#: ai-avatar.php
+msgid "Theme"
+msgstr "主题"
+
+#: ai-avatar.php
+msgid "Light"
+msgstr "浅色"
+
+#: ai-avatar.php
+msgid "Dark"
+msgstr "深色"
+
+#: ai-avatar.php
+msgid "Auto (match system)"
+msgstr "跟随系统"
+
+#: ai-avatar.php
+msgid "Primary color"
+msgstr "主色调"
+
+#: ai-avatar.php
+msgid "Hex color, e.g. #6366F1"
+msgstr "十六进制颜色,如 #6366F1"
+
+#: ai-avatar.php
+msgid "Size"
+msgstr "尺寸"
+
+#: ai-avatar.php
+msgid "Compact"
+msgstr "紧凑"
+
+#: ai-avatar.php
+msgid "Normal"
+msgstr "标准"
+
+#: ai-avatar.php
+msgid "Large"
+msgstr "大"
+
+#: ai-avatar.php
+msgid "Behavior"
+msgstr "行为"
+
+#: ai-avatar.php
+msgid "Site-wide auto-inject"
+msgstr "全站自动注入"
+
+#: ai-avatar.php
+msgid "Show the bubble on every frontend page"
+msgstr "在每个前端页面自动显示气泡"
+
+#: ai-avatar.php
+msgid "When disabled, the avatar only shows where you use the [ai_avatar] shortcode."
+msgstr "关掉的话只在你写了 [ai_avatar] 短代码的地方显示。"
+
+#: ai-avatar.php
+msgid "Auto-open"
+msgstr "自动展开"
+
+#: ai-avatar.php
+msgid "Expand the chat panel automatically on page load"
+msgstr "页面加载后自动展开对话框"
+
+#: ai-avatar.php
+msgid "Greeting message"
+msgstr "问候语"
+
+#: ai-avatar.php
+msgid "Hi! How can I help you today?"
+msgstr "你好,有什么可以帮你?"
+
+#: ai-avatar.php
+msgid "Excluded page IDs"
+msgstr "排除页面 ID"
+
+#: ai-avatar.php
+msgid "Comma-separated page IDs where the avatar should not appear."
+msgstr "不显示数字人的页面 ID,英文逗号分隔。"
+
+#: ai-avatar.php
+msgid "Advanced"
+msgstr "高级"
+
+#: ai-avatar.php
+msgid "SDK URL"
+msgstr "SDK 地址"
+
+#. translators: %s: default SDK URL
+#: ai-avatar.php
+msgid "Default: %s — usually no need to change."
+msgstr "默认: %s,通常不用改。"
+
+#: ai-avatar.php
+msgid "How to use"
+msgstr "使用方式"
+
+#: ai-avatar.php
+msgid "Pick either:"
+msgstr "两种方式任选其一:"
+
+#: ai-avatar.php
+msgid "Site-wide:"
+msgstr "全站自动显示:"
+
+#: ai-avatar.php
+msgid "Tick \"Site-wide auto-inject\" above — every page shows the bubble."
+msgstr "上方\"全站自动注入\"打勾,所有页面都会出现气泡。"
+
+#: ai-avatar.php
+msgid "Specific spots:"
+msgstr "指定位置显示:"
+
+#: ai-avatar.php
+msgid "Write the shortcode in any post or page:"
+msgstr "在文章/页面里写短代码:"
+
+#: ai-avatar.php
+msgid "Settings"
+msgstr "设置"

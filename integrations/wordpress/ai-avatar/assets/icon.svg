@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!--
+    AI Avatar 插件图标
+    设计:复用现有 widget 气泡图标 (chat bubble + 3 typing dots),放在品牌色渐变圆角方形上。
+    保持 widget UI 与插件市场图标视觉一致,用户装上就认得。
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 圆角方背景 -->
+  <rect width="256" height="256" rx="56" ry="56" fill="url(#bg)"/>
+
+  <!-- 中央对话气泡 (来自 widget 现有视觉, scale 6x: 24→144, 居中) -->
+  <g transform="translate(56,52)">
+    <path
+      d="M72 12
+         C36.48 12 12 38.48 12 72
+         c0 10.92 2.94 21.18 8.04 30
+         L12 132
+         l30 -8.04
+         C50.82 129.06 61.08 132 72 132
+         c33.12 0 60 -26.88 60 -60
+         S105.12 12 72 12 z"
+      fill="rgba(255,255,255,0.15)"
+      stroke="white"
+      stroke-width="9"
+      stroke-linejoin="round"/>
+    <!-- 三个 typing dots -->
+    <circle cx="48" cy="72" r="9" fill="white"/>
+    <circle cx="72" cy="72" r="9" fill="white"/>
+    <circle cx="96" cy="72" r="9" fill="white"/>
+  </g>
+</svg>

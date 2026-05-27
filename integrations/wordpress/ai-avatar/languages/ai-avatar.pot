@@ -1,0 +1,211 @@
+# Copyright (C) 2026 AI Avatar Team
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AI Avatar 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/hwj10086/avataraisdk/issues\n"
+"POT-Creation-Date: 2026-05-26 00:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: hand-authored\n"
+
+#: ai-avatar.php
+msgid "AI Avatar Settings"
+msgstr ""
+
+#: ai-avatar.php
+msgid "AI Avatar"
+msgstr ""
+
+#: ai-avatar.php
+msgid "About this plugin"
+msgstr ""
+
+#: ai-avatar.php
+msgid "This plugin ships with a hosted demo LLM so you can try the 3D avatar in minutes. For production use with your own LLM (OpenAI, Claude, internal API), please use the JavaScript SDK in external mode."
+msgstr ""
+
+#: ai-avatar.php
+msgid "Learn more"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Please fill in your API Key — the avatar will not appear until you do."
+msgstr ""
+
+#: ai-avatar.php
+msgid "No key yet?"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Get one"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Required"
+msgstr ""
+
+#: ai-avatar.php
+msgid "API Key"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Generate one in the AI Avatar console."
+msgstr ""
+
+#: ai-avatar.php
+msgid "Agent ID"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Optional — leave blank to auto-detect from the API Key."
+msgstr ""
+
+#: ai-avatar.php
+msgid "Appearance"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Position"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Bottom right"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Bottom left"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Top right"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Top left"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Theme"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Light"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Dark"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Auto (match system)"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Primary color"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Hex color, e.g. #6366F1"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Size"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Compact"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Normal"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Large"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Behavior"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Site-wide auto-inject"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Show the bubble on every frontend page"
+msgstr ""
+
+#: ai-avatar.php
+msgid "When disabled, the avatar only shows where you use the [ai_avatar] shortcode."
+msgstr ""
+
+#: ai-avatar.php
+msgid "Auto-open"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Expand the chat panel automatically on page load"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Greeting message"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Hi! How can I help you today?"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Excluded page IDs"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Comma-separated page IDs where the avatar should not appear."
+msgstr ""
+
+#: ai-avatar.php
+msgid "Advanced"
+msgstr ""
+
+#: ai-avatar.php
+msgid "SDK URL"
+msgstr ""
+
+#. translators: %s: default SDK URL
+#: ai-avatar.php
+msgid "Default: %s — usually no need to change."
+msgstr ""
+
+#: ai-avatar.php
+msgid "How to use"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Pick either:"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Site-wide:"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Tick \"Site-wide auto-inject\" above — every page shows the bubble."
+msgstr ""
+
+#: ai-avatar.php
+msgid "Specific spots:"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Write the shortcode in any post or page:"
+msgstr ""
+
+#: ai-avatar.php
+msgid "Settings"
+msgstr ""

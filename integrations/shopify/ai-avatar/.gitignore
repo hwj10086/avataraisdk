@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.shopify/
+.env
+.env.local
+*.log
+.DS_Store
+package-lock.json
